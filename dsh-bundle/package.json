@@ -1,7 +1,7 @@
 {
   "name": "dsh-skill-andrej-karpathy",
   "version": "1.0.0",
-  "description": "Andrej Karpathy inspired coding guidelines as a DSH skill bundle. Reduces common LLM coding mistakes through four principles: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution.",
+  "description": "Andrej Karpathy inspired coding guidelines as a DSH skill bundle.",
   "type": "module",
   "main": "./index.mjs",
   "exports": {
@@ -15,26 +15,18 @@
     "skills/**/*"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/multica-ai/andrej-karpathy-skills.git"
-  },
   "keywords": [
-    "dsh",
+    "dsh-plugin",
     "dsh-bundle",
-    "deepseek-harness",
-    "skill",
-    "andrej-karpathy",
-    "coding-guidelines",
-    "llm",
-    "agent"
+    "deepseek-harness"
   ],
   "dsh": {
     "bundle": {
+      "name": "andrej-karpathy-coding-guidelines",
       "patch": "./cordis.patch.yml"
     },
     "skills": [
-      "./skills/andrej-karpathy-coding-guidelines/SKILL.md"
+      "./skills/andrej-karpathy-coding-guidelines"
     ]
   }
 }
